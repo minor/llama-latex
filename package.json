@@ -1,0 +1,34 @@
+{
+    "name": "llama-latex",
+    "version": "0.0.1",
+    "description": "Image to LaTeX with Llama 3.2 Vision.",
+    "author": "Saurish Srivastava (@saurishhh)",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/minor/llama-latex.git"
+    },
+    "license": "MIT",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "test": "tsx ./test/index.ts"
+    },
+    "devDependencies": {
+        "@types/node": "^22.9.0",
+        "tsx": "^4.19.2",
+        "typescript": "^5.6.3"
+    },
+    "keywords": [
+        "together ai",
+        "vLLMs",
+        "open source",
+        "AI models",
+        "LaTeX",
+        "Llama",
+        "multimodal"
+    ],
+    "dependencies": {
+        "together-ai": "^0.9.0"
+    }
+}
