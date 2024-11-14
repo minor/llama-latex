@@ -17,7 +17,7 @@
 ## Usage
 
 ```js
-import { img2latex } from "llama-ocr";
+import { img2latex } from "llama-latex";
 
 const latex = await img2latex({
   filePath: "./test/maxwell_distribution.png",, // path to your image
