@@ -1,6 +1,14 @@
 import Together from "together-ai";
 import fs from "fs";
 
+function extractLatexCode(content) {
+    const latexMatch = content.match(/```latex\n([\s\S]*?)\n```/);
+    if (latexMatch && latexMatch[1]) {
+      return latexMatch[1].trim();
+    }
+    return content;
+  }
+
 export async function img2latex({
   filePath,
   apiKey = process.env.TOGETHER_API_KEY,
@@ -20,7 +28,7 @@ export async function img2latex({
   });
 
   let finalLatex = await getLatex({ together, visionLLM, filePath });
-
+  finalLatex = extractLatexCode(finalLatex)
   return finalLatex;
 }
 
