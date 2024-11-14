@@ -20,7 +20,7 @@
 import { img2latex } from "llama-latex";
 
 const latex = await img2latex({
-  filePath: "./test/maxwell_distribution.png",, // path to your image
+  filePath: "./test/maxwell_distribution.png", // path to your image
   apiKey: process.env.TOGETHER_API_KEY, // Together AI API key
 });
 ```
